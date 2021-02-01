@@ -1,6 +1,6 @@
-if (process.env.NODE_ENV !== 'production') require('dotenv').config();
+if (process.env.NODE_ENV !== "production") require("dotenv").config();
 
-const app = require('./Thip_Keovilay_Portfolio/server/app');
+const app = require("./server/app");
 const port = process.env.PORT || 8080;
 
 app.listen(port, () => {
