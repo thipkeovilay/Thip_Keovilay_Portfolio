@@ -8,9 +8,21 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="profile">
-        <img className="seed-symbol" src={SeedSymbol}></img>
-        <img className="flower-symbol" src={FlowerSymbol}></img>
-        <img className="profile-image" src={ProfileImage}></img>
+        <img
+          className="seed-symbol"
+          src={SeedSymbol}
+          alt="Seed of Life Symbol"
+        ></img>
+        <img
+          className="flower-symbol"
+          src={FlowerSymbol}
+          alt="Flower of Life Symbol"
+        ></img>
+        <img
+          className="profile-image"
+          src={ProfileImage}
+          alt="Profile Image"
+        ></img>
       </div>
       <div className="notepad">
         <div className="notepad-content">
