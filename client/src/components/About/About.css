@@ -73,7 +73,7 @@
   margin-top: 77px;
   font-size: 100px;
   font-weight: 100;
-  margin-left: 50px;
+  margin-left: 56px;
 }
 
 .symbol-text-one {
@@ -82,12 +82,12 @@
 }
 
 .symbol-text-two {
-  margin-left: 450px;
+  margin-left: 460px;
   font-size: 25px;
 }
 
 .symbol-text-three {
-  margin-left: 410px;
+  margin-left: 412px;
   font-size: 25px;
 }
 
@@ -143,8 +143,7 @@
 }
 
 .bar-one {
-  border: 1px solid green;
-  height: 547px;
+  height: 548px;
   width: 230px;
   background-color: #bc6c25;
   border-color: #bc6c25;
@@ -169,7 +168,7 @@
 }
 
 .bar-two {
-  height: 407px;
+  height: 409px;
   width: 230px;
   background-color: #dda15e;
   border-color: #dda15e;
