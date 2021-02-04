@@ -40,6 +40,37 @@ const About = () => {
         <p className="symbol-text-two">ME</p>
         <p className="symbol-text-three">PERFECT PEAR</p>
       </div>
+      <div className="about-section-four">
+        <h1 className="skills">SKILLS.</h1>
+        <div className="skills-chart-container">
+          <ul className="skills-level">
+            <li className="skill">
+              <p className="level">Expert</p>
+              <p className="level">Advanced</p>
+              <p className="level">Intermediate</p>
+              <p className="level">Novice</p>
+            </li>
+          </ul>
+          <div className="skills-chart">
+            <div className="bar-one">
+              <div className="tea-percentage">101%</div>
+              <div className="tea-drinking">Tea Drinking</div>
+            </div>
+            <div className="bar-two">
+              <div className="front-end-percentage">75%</div>
+              <div className="front-end">Front-End</div>
+            </div>
+            <div className="bar-three">
+              <div className="design-percentage">93%</div>
+              <div className="design">Design</div>
+            </div>
+            <div className="bar-four">
+              <div className="back-end-percentage">59%</div>
+              <div className="back-end">Back-End</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -2,18 +2,11 @@
   font-family: "Typewriter";
   src: url("https://ufonts.com/fonts/TypewriterEliteMTStd.ttf")
     format("truetype");
-  /* src: url("TypewriterEliteMTStd.eot?#iefix") format("embedded-opentype"),
-    url("TypewriterEliteMTStd.svg#TypewriterEliteMTStd") format("svg"),
-    url("TypewriterEliteMTStd.ttf") format("truetype"),
-    url("TypewriterEliteMTStd.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; */
 }
 
 .home-container {
   display: flex;
   color: #343a40;
-  margin-top: 10px;
 }
 
 .profile-image {

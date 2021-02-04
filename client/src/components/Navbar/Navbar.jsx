@@ -13,12 +13,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="about-link">
-            <Link to="/About" style={{ textDecoration: "none" }}>
+            <Link to="/about" style={{ textDecoration: "none" }}>
               ABOUT
             </Link>
           </li>
           <li className="projects-link">
-            <Link to="/Projects" style={{ textDecoration: "none" }}>
+            <Link to="/projects" style={{ textDecoration: "none" }}>
               PROJECTS
             </Link>
           </li>

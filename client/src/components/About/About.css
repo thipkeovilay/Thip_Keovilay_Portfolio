@@ -6,7 +6,6 @@
 
 .about-section-one {
   display: flex;
-  margin-top: 10px;
 }
 
 .about-me {
@@ -90,4 +89,159 @@
 .symbol-text-three {
   margin-left: 410px;
   font-size: 25px;
+}
+
+.about-section-four {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 85px;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 67px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 3px;
+}
+
+.skills-chart {
+  background-image: linear-gradient(
+      90deg,
+      #cbcaca,
+      2px,
+      transparent,
+      2px,
+      transparent
+    ),
+    linear-gradient(0, #cbcaca, 1px, transparent, 1px, transparent);
+  background-position: 0 0, 0 5px;
+  background-size: 100% 8.5rem;
+  margin-left: 200px;
+  margin-top: -530px;
+  margin-right: 70px;
+}
+
+.skill {
+  list-style-type: none;
+}
+
+.level {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding-bottom: 95px;
+}
+
+.skills-level {
+  margin-left: 7px;
+}
+
+.skills-chart {
+  display: flex;
+}
+
+.bar-one {
+  border: 1px solid green;
+  height: 547px;
+  width: 230px;
+  background-color: #bc6c25;
+  border-color: #bc6c25;
+  margin-left: 50px;
+}
+
+.tea-percentage {
+  font-size: 55px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.2;
+  padding-top: 430px;
+  margin-bottom: 20px;
+}
+
+.tea-drinking {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.bar-two {
+  height: 407px;
+  width: 230px;
+  background-color: #dda15e;
+  border-color: #dda15e;
+  margin-left: 50px;
+  margin-top: 140px;
+}
+
+.front-end {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.front-end-percentage {
+  font-size: 55px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.2;
+  padding-top: 289px;
+  margin-bottom: 20px;
+}
+
+.bar-three {
+  height: 507px;
+  width: 230px;
+  background-color: #283618;
+  border-color: #283618;
+  margin-left: 50px;
+  margin-top: 42px;
+}
+
+.design-percentage {
+  font-size: 55px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.2;
+  padding-top: 387px;
+  margin-bottom: 20px;
+}
+
+.design {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.bar-four {
+  height: 300px;
+  width: 230px;
+  background-color: #606c38;
+  border-color: #606c38;
+  margin-left: 50px;
+  margin-top: 249px;
+}
+
+.back-end-percentage {
+  font-size: 55px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.2;
+  padding-top: 180px;
+  margin-bottom: 20px;
+}
+
+.back-end {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
 }
