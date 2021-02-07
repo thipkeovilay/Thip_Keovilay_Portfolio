@@ -1,0 +1,169 @@
+.contact {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 320px;
+  padding-top: 30px;
+}
+
+.websites {
+  letter-spacing: 3px;
+}
+
+.linked-in-component {
+  display: flex;
+  font-size: 20px;
+  margin-top: -20px;
+}
+
+.linked-in-component a {
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.gitHub-component {
+  display: flex;
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+.gitHub-component a {
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+.resume-component {
+  display: flex;
+  margin-top: 5px;
+  margin-left: -19px;
+}
+
+.resume-one {
+  height: 460px;
+  width: 380px;
+}
+
+.resume-two {
+  height: 460px;
+  width: 380px;
+}
+
+.send-button-component {
+  margin-top: -175px;
+  padding-top: 178px;
+  padding-bottom: 21px;
+  background-color: #939b8d;
+  margin-left: -320px;
+  padding-left: 305px;
+}
+
+.send-button {
+  border: 1px solid lightgray;
+  width: 230px;
+  height: 50px;
+  letter-spacing: 3px;
+  background-color: transparent;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.resume figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 380px;
+  max-height: 460px;
+  background: gray;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.resume figure figcaption {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 17px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.resume figure figcaption::before,
+.resume figure figcaption::after {
+  pointer-events: none;
+}
+
+.resume figure figcaption,
+.resume figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figure.effect img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover img {
+  opacity: 0.5;
+}
+
+figure.effect figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #ffffff;
+  content: "";
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.effect figcaption::before,
+figure.effect p {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect p.download {
+  padding-top: 170px;
+  text-align: center;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+figure.effect p.resume-text {
+  margin-top: -15px;
+  text-align: center;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+figure.effect:hover figcaption::before,
+figure.effect:hover p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .resume figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+
+.resume-link {
+  text-decoration: none;
+  color: #ffffff;
+}

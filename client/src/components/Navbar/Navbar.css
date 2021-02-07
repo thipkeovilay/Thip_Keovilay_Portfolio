@@ -51,6 +51,7 @@
   letter-spacing: 3px;
   background-color: transparent;
   color: gray;
+  cursor: pointer;
 }
 
 .home-link {
