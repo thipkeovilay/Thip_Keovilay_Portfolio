@@ -1,4 +1,188 @@
 .project-image {
-  width: 350px;
-  height: 200px;
+  width: 380px;
+  height: 215px;
+}
+
+.project-description {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.projects-section-one {
+  display: flex;
+  padding-left: 40px;
+  margin-top: -200px;
+  position: absolute;
+  z-index: 1;
+}
+
+.projects-section-two {
+  margin-top: -110px;
+  display: flex;
+  padding-left: 40px;
+  position: absolute;
+  z-index: 1;
+}
+
+.projects figure {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 10px;
+  min-width: 320px;
+  max-width: 380px;
+  max-height: 215px;
+  background: black;
+  text-align: center;
+  cursor: pointer;
+}
+
+.projects figure figcaption {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 17px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.projects figure figcaption::before,
+.projects figure figcaption::after {
+  pointer-events: none;
+}
+
+.projects figure figcaption,
+.projects figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+figure.effect img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover img {
+  opacity: 0.5;
+}
+
+figure.effect figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #ffffff;
+  content: "";
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+figure.effect figcaption::before,
+figure.effect button {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect button.live-project {
+  margin-top: 65px;
+  text-align: center;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+figure.effect button.source-code {
+  margin-top: 95px;
+  text-align: center;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+figure.effect button {
+  margin-top: -15px;
+  text-align: center;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+figure.effect:hover figcaption::before,
+figure.effect:hover button {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+@media screen and (max-width: 50em) {
+  .content {
+    padding: 0 10px;
+    text-align: center;
+  }
+  .projects figure {
+    display: inline-block;
+    float: none;
+    margin: 10px auto;
+    width: 100%;
+  }
+}
+
+.projects-button-two {
+  margin-top: -70px;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  color: grey;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+}
+
+.empty {
+  height: 250px;
+  position: relative;
+  background-color: #ebe9e7;
+  margin-top: 260px;
+}
+
+.card-one {
+  border: 1px solid gray;
+  box-shadow: 0 0 10px 0;
+  width: 400px;
+  padding: 5px;
+  background-color: #ebe9e7;
+}
+
+.card-two {
+  border: 1px solid gray;
+  box-shadow: 0 0 10px 0;
+  width: 400px;
+  padding: 5px;
+  background-color: #ebe9e7;
+  margin-left: 60px;
+}
+
+.card-three {
+  border: 1px solid gray;
+  box-shadow: 0 0 10px 0;
+  width: 400px;
+  padding: 5px;
+  background-color: #ebe9e7;
+  margin-left: 60px;
+}
+
+.project-description {
+  text-align: center;
+  width: 380px;
+  margin-left: 12px;
+}
+
+.loading {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 3px;
+  padding-top: 80px;
 }
