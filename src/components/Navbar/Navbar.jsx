@@ -14,20 +14,23 @@ const Navbar = () => {
               HOME
             </Link>
           </li>
-          <li className="about-link">
-            <Link to="/about" style={{ textDecoration: "none" }}>
-              ABOUT
+          <div className="nav-links-right">
+            <li className="about-link">
+              <Link to="/about" style={{ textDecoration: "none" }}>
+                ABOUT
+              </Link>
+            </li>
+            <li className="projects-link">
+              <Link to="/projects" style={{ textDecoration: "none" }}>
+                PROJECTS
+              </Link>
+            </li>
+
+            <Link to="/contact">
+              <button className="contact-button">CONTACT</button>
             </Link>
-          </li>
-          <li className="projects-link">
-            <Link to="/projects" style={{ textDecoration: "none" }}>
-              PROJECTS
-            </Link>
-          </li>
+          </div>
         </ul>
-        <Link to="/contact">
-          <button className="contact-button">CONTACT</button>
-        </Link>
       </div>
     </div>
   );

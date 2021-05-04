@@ -4,7 +4,7 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background-color: #ffffff;
 }
 
@@ -12,8 +12,6 @@
   width: 60px;
   height: 60px;
   margin-right: 20px;
-  margin-top: -21px;
-  margin-bottom: -21px;
 }
 
 .navbar ul li {
@@ -23,13 +21,16 @@
 .links {
   display: flex;
   width: 100vw;
-  justify-content: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .navbar ul {
   display: flex;
+}
+
+.nav-links-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
 .about-link {
@@ -60,6 +61,8 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 14px;
   letter-spacing: 3px;
+  display: flex;
+  align-items: center;
 }
 
 a {

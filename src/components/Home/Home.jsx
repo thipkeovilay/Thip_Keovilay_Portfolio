@@ -18,11 +18,7 @@ const Home = () => {
           src={FlowerSymbol}
           alt="Flower of Life Symbol"
         ></img>
-        <img
-          className="profile-image"
-          src={ProfileImage}
-          alt="Profile Image"
-        ></img>
+        <img className="profile-image" src={ProfileImage} alt="Profile"></img>
       </div>
       <div className="notepad">
         <div className="notepad-content">

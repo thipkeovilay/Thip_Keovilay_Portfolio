@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Projects.css";
-import { Link } from "react-router-dom";
 import EstateRev from "../../assets/EstateRev_project.png";
 import FallFanSite from "../../assets/Fall_project.png";
 import WillyWonkaGame from "../../assets/Willy_Wonka_project.png";
@@ -13,11 +12,7 @@ const Projects = () => {
       <div className="projects-section-one">
         <div className="card-one">
           <figure className="effect">
-            <img
-              className="project-image"
-              src={EstateRev}
-              alt="Project Image"
-            ></img>
+            <img className="project-image" src={EstateRev} alt="Project"></img>
             <figcaption>
               <div className="projects-button-one">
                 <a href="https://estaterev.herokuapp.com/">
@@ -41,7 +36,7 @@ const Projects = () => {
             <img
               className="project-image"
               src={WillyWonkaGame}
-              alt="Project Image"
+              alt="Project"
             ></img>
             <figcaption>
               <div className="projects-button-one">
@@ -66,7 +61,7 @@ const Projects = () => {
             <img
               className="project-image"
               src={FallFanSite}
-              alt="Project Image"
+              alt="Project"
             ></img>
             <figcaption>
               <div className="projects-button-one">
@@ -94,7 +89,7 @@ const Projects = () => {
             <img
               className="project-image"
               src={HangmanGame}
-              alt="Project Image"
+              alt="Project"
             ></img>
             <figcaption>
               <div className="projects-button-two-hangman">
@@ -111,11 +106,7 @@ const Projects = () => {
         </div>
         <div className="card-two">
           <figure className="effect">
-            <img
-              className="project-image"
-              src={Loading}
-              alt="Project Image"
-            ></img>
+            <img className="project-image" src={Loading} alt="Project"></img>
             <figcaption>
               <div className="projects-loading">
                 <p className="loading">Project Coming Soon!</p>
@@ -129,11 +120,7 @@ const Projects = () => {
         </div>
         <div className="card-three">
           <figure className="effect">
-            <img
-              className="project-image"
-              src={Loading}
-              alt="Project Image"
-            ></img>
+            <img className="project-image" src={Loading} alt="Project"></img>
             <figcaption>
               <div className="projects-loading">
                 <p className="loading">Project Coming Soon!</p>

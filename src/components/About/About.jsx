@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./About.css";
 import Leaf from "../../assets/leaf.png";
 import Code from "../../assets/code.png";
@@ -6,11 +6,44 @@ import Avatar from "../../assets/avatar.png";
 import Pear from "../../assets/pear.png";
 
 const About = () => {
+  const [developerStatus, setDeveloperStatus] = useState("active");
+  const [militaryStatus, setMilitaryStatus] = useState("");
+  const [cnaStatus, setCnaStatus] = useState("");
+  const [officeStatus, setOfficeStatus] = useState("");
+
+  const developerClick = (event) => {
+    setDeveloperStatus("active");
+    setMilitaryStatus("");
+    setCnaStatus("");
+    setOfficeStatus("");
+  };
+
+  const militaryClick = (event) => {
+    setDeveloperStatus("");
+    setMilitaryStatus("active");
+    setCnaStatus("");
+    setOfficeStatus("");
+  };
+
+  const cnaClick = (event) => {
+    setDeveloperStatus("");
+    setMilitaryStatus("");
+    setCnaStatus("active");
+    setOfficeStatus("");
+  };
+
+  const officeClick = (event) => {
+    setDeveloperStatus("");
+    setMilitaryStatus("");
+    setCnaStatus("");
+    setOfficeStatus("active");
+  };
+
   return (
     <div className="about-component">
       <div className="about-section-one">
         <div className="about-img">
-          <img className="leaf" src={Leaf} alt="Leaf Image"></img>
+          <img className="leaf" src={Leaf} alt="Leaf"></img>
         </div>
         <div className="about-me">
           <h1 className="about">ABOUT ME.</h1>
@@ -31,7 +64,7 @@ const About = () => {
       <div className="about-section-two">
         <img className="code" src={Code} alt="Code Symbol"></img>
         <p className="sign">+</p>
-        <img className="avatar" src={Avatar} alt="Avatar Image"></img>
+        <img className="avatar" src={Avatar} alt="Avatar"></img>
         <p className="sign">=</p>
         <img className="pear" src={Pear} alt="Pear Symbol"></img>
       </div>
@@ -67,6 +100,97 @@ const About = () => {
             <div className="bar-four">
               <div className="back-end-percentage">59%</div>
               <div className="back-end">Back-End</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="about-section-five">
+        <h1 className="experience">PROFESSIONAL EXPERIENCE.</h1>
+        <div className="experience-container">
+          <ul className="ex ex-tabs pro-ex-tabs" role="tablist">
+            <li className="ex-item">
+              <p
+                className={`ex-link ${developerStatus}`}
+                role="tab"
+                onClick={() => developerClick()}
+              >
+                Web Developer
+              </p>
+            </li>
+            <li className="ex-item">
+              <p
+                className={`ex-link ${militaryStatus}`}
+                role="tab"
+                onClick={() => militaryClick()}
+              >
+                Military
+              </p>
+            </li>
+            <li className="ex-item">
+              <p
+                className={`ex-link ${cnaStatus}`}
+                role="tab"
+                onClick={() => cnaClick()}
+              >
+                Certified Nursing Assistant
+              </p>
+            </li>
+            <li className="ex-item">
+              <p
+                className={`ex-link ${officeStatus}`}
+                role="tab"
+                onClick={() => officeClick()}
+              >
+                Office Asstistant/ Cashier
+              </p>
+            </li>
+          </ul>
+          <div className="ex-desc ex-desc-with-tabs">
+            <div className="tab-content">
+              <div className="tab-pane fade active show" role="tabpanel">
+                {/* <p>
+                  {() => {
+                    switch (this.state.) {
+                      case "developer":
+                        return "hello";
+                      case "military":
+                        return "bye";
+                      case "cna":
+                        return "okay";
+                      case "office":
+                        return "sure";
+                    }
+                  }}
+                </p> */}
+                {/* <p
+                  className={`ex-link ${developerStatus}`}
+                  role="tab"
+                  onClick={() => developerClick()}
+                >
+                  hello
+                </p>
+                <p
+                  className={`ex-link ${militaryStatus}`}
+                  role="tab"
+                  onClick={() => militaryClick()}
+                >
+                  bye
+                </p>
+                <p
+                  className={`ex-link ${cnaStatus}`}
+                  role="tab"
+                  onClick={() => cnaClick()}
+                >
+                  okay
+                </p>
+                <p
+                  className={`ex-link ${officeStatus}`}
+                  role="tab"
+                  onClick={() => officeClick()}
+                >
+                  sure
+                </p> */}
+              </div>
             </div>
           </div>
         </div>
