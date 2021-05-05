@@ -153,7 +153,6 @@ button {
 .arrow-button {
   width: 4rem;
   height: 5rem;
-  padding-top: 12%;
   margin-left: 25px;
   border: none;
   overflow: visible;
@@ -162,14 +161,15 @@ button {
 }
 
 .arrow-container {
-  padding-top: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 40px;
 }
 
 .arrow-button-right {
   width: 4rem;
   height: 5rem;
-  margin-top: 12%;
   margin-left: 25px;
   border: none;
   overflow: visible;
