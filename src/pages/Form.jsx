@@ -31,7 +31,15 @@ const Form = () => {
   //   this.setState({ [input]: e.target.value });
   // };
 
-  return <div></div>;
+  return (
+    <div>
+      <h1 className="form-heading">COMING SOON</h1>
+      <p className="form-para">
+        Please feel free to contact me via email at{" "}
+        <b className="contact-email">thip.keovilay@gmail.com</b>
+      </p>
+    </div>
+  );
 };
 
 export default Form;

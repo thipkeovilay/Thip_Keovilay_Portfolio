@@ -2,6 +2,7 @@ import React from "react";
 import "./Contact.css";
 import { Link } from "react-router-dom";
 import ATSResume from "../../assets/Keovilay_Thip_Resume.png";
+import pdfATSResume from "../../assets/Keovilay_Thip_Resume.pdf";
 import VResume from "../../assets/Keovilay_Thip_VResume.png";
 import pdfVResume from "../../assets/Keovilay_Thip_VResume.pdf";
 
@@ -36,7 +37,7 @@ const Contact = () => {
             <figcaption>
               <a
                 className="resume-link"
-                href={pdfVResume}
+                href={pdfATSResume}
                 download
                 onClick={() => download()}
               >
