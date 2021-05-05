@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.css";
 import Leaf from "../../assets/leaf.png";
 import Code from "../../assets/code.png";
@@ -6,38 +6,38 @@ import Avatar from "../../assets/avatar.png";
 import Pear from "../../assets/pear.png";
 
 const About = () => {
-  const [developerStatus, setDeveloperStatus] = useState("active");
-  const [militaryStatus, setMilitaryStatus] = useState("");
-  const [cnaStatus, setCnaStatus] = useState("");
-  const [officeStatus, setOfficeStatus] = useState("");
+  // const [developerStatus, setDeveloperStatus] = useState("active");
+  // const [militaryStatus, setMilitaryStatus] = useState("");
+  // const [cnaStatus, setCnaStatus] = useState("");
+  // const [officeStatus, setOfficeStatus] = useState("");
 
-  const developerClick = (event) => {
-    setDeveloperStatus("active");
-    setMilitaryStatus("");
-    setCnaStatus("");
-    setOfficeStatus("");
-  };
+  // const developerClick = (event) => {
+  //   setDeveloperStatus("active");
+  //   setMilitaryStatus("");
+  //   setCnaStatus("");
+  //   setOfficeStatus("");
+  // };
 
-  const militaryClick = (event) => {
-    setDeveloperStatus("");
-    setMilitaryStatus("active");
-    setCnaStatus("");
-    setOfficeStatus("");
-  };
+  // const militaryClick = (event) => {
+  //   setDeveloperStatus("");
+  //   setMilitaryStatus("active");
+  //   setCnaStatus("");
+  //   setOfficeStatus("");
+  // };
 
-  const cnaClick = (event) => {
-    setDeveloperStatus("");
-    setMilitaryStatus("");
-    setCnaStatus("active");
-    setOfficeStatus("");
-  };
+  // const cnaClick = (event) => {
+  //   setDeveloperStatus("");
+  //   setMilitaryStatus("");
+  //   setCnaStatus("active");
+  //   setOfficeStatus("");
+  // };
 
-  const officeClick = (event) => {
-    setDeveloperStatus("");
-    setMilitaryStatus("");
-    setCnaStatus("");
-    setOfficeStatus("active");
-  };
+  // const officeClick = (event) => {
+  //   setDeveloperStatus("");
+  //   setMilitaryStatus("");
+  //   setCnaStatus("");
+  //   setOfficeStatus("active");
+  // };
 
   return (
     <div className="about-component">
@@ -104,7 +104,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="about-section-five">
+      {/* <div className="about-section-five">
         <h1 className="experience">PROFESSIONAL EXPERIENCE.</h1>
         <div className="experience-container">
           <ul className="ex ex-tabs pro-ex-tabs" role="tablist">
@@ -148,7 +148,7 @@ const About = () => {
           <div className="ex-desc ex-desc-with-tabs">
             <div className="tab-content">
               <div className="tab-pane fade active show" role="tabpanel">
-                {/* <p>
+                <p>
                   {() => {
                     switch (this.state.) {
                       case "developer":
@@ -161,8 +161,8 @@ const About = () => {
                         return "sure";
                     }
                   }}
-                </p> */}
-                {/* <p
+                </p>
+                <p
                   className={`ex-link ${developerStatus}`}
                   role="tab"
                   onClick={() => developerClick()}
@@ -189,12 +189,12 @@ const About = () => {
                   onClick={() => officeClick()}
                 >
                   sure
-                </p> */}
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

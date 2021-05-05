@@ -6,13 +6,13 @@
 
 .about-section-one {
   display: flex;
+  justify-content: center;
 }
 
 .about-me {
   width: 60vw;
   padding-bottom: 40px;
   padding-top: 50px;
-  margin-left: -30px;
 }
 
 .about {
@@ -31,14 +31,14 @@
 .leaf {
   width: 260px;
   height: 300px;
-  margin-left: 150px;
   margin-top: 20px;
 }
 
 .about-section-two {
   display: flex;
-  padding-left: 20px;
+  justify-content: center;
   padding-top: 20px;
+  width: 100%;
 }
 
 .code {
@@ -65,7 +65,6 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   letter-spacing: 3px;
   display: flex;
-  margin-top: -40px;
   padding-bottom: 70px;
 }
 
@@ -87,7 +86,7 @@
 }
 
 .symbol-text-three {
-  margin-left: 412px;
+  margin-left: 415px;
   font-size: 25px;
 }
 
@@ -245,7 +244,7 @@
   color: #ffffff;
 }
 
-.about-section-five {
+/* .about-section-five {
   background-color: #ebe9e7;
   height: 95vh;
 }
@@ -297,4 +296,4 @@
 
 .ex-item {
   display: flex;
-}
+} */
