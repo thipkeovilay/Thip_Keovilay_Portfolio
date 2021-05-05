@@ -1,15 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
 import EstateRev from "../../assets/EstateRev_project.png";
 import FallFanSite from "../../assets/Fall_project.png";
 import WillyWonkaGame from "../../assets/Willy_Wonka_project.png";
 import HangmanGame from "../../assets/Hangman_project.png";
+import KPU from "../../assets/KPU_project.png";
 import Loading from "../../assets/loading.jpg";
+import LeftArrow from "../../assets/left-arrow.png";
+import RightArrow from "../../assets/right-arrow.png";
 
 const Projects = () => {
+  const [number, setNumber] = useState(2);
+
+  const handleClick = () => {
+    setNumber((num) => num + 1);
+  };
+
+  const handleMinusClick = () => {
+    if (number - 2 < 0) return;
+    setNumber((num) => {
+      return num - 1;
+    });
+  };
+
   return (
     <div className="projects">
+      <div className="arrow-container">
+        <button className="arrow-button">
+          <img
+            className="arrow"
+            src={LeftArrow}
+            alt="Left Arrow"
+            onClick={handleMinusClick}
+          ></img>
+        </button>
+      </div>
       <div className="projects-section-one">
+        {/* <button className="arrow-button">
+          <img
+            className="arrow"
+            src={LeftArrow}
+            alt="Left Arrow"
+            onClick={handleMinusClick}
+          ></img>
+        </button> */}
         <div className="card-one">
           <figure className="effect">
             <img className="project-image" src={EstateRev} alt="Project"></img>
@@ -31,7 +65,7 @@ const Projects = () => {
             services.
           </p>
         </div>
-        <div className="card-two">
+        <div className="card">
           <figure className="effect">
             <img
               className="project-image"
@@ -56,7 +90,7 @@ const Projects = () => {
             colors through the use of technology.
           </p>
         </div>
-        <div className="card-three">
+        <div className="card">
           <figure className="effect">
             <img
               className="project-image"
@@ -81,10 +115,10 @@ const Projects = () => {
             some fun tips and interesting facts.
           </p>
         </div>
-      </div>
-      <div className="empty"></div>
-      <div className="projects-section-two">
-        <div className="card-one">
+
+        {/* <div className="empty"></div> */}
+        {/* <div className="projects-section-two"> */}
+        <div className="card">
           <figure className="effect">
             <img
               className="project-image"
@@ -104,26 +138,15 @@ const Projects = () => {
             of Hangman.
           </p>
         </div>
-        <div className="card-two">
+        <div className="card">
           <figure className="effect">
-            <img className="project-image" src={Loading} alt="Project"></img>
+            <img className="project-image" src={KPU} alt="Project"></img>
             <figcaption>
               <div className="projects-loading">
-                <p className="loading">Project Coming Soon!</p>
-              </div>
-            </figcaption>
-          </figure>
-          <p className="project-description">
-            Want to know what it's like to talk to <em>me, myself </em>and{" "}
-            <em>I</em>? Join in for this solo chatroom session.
-          </p>
-        </div>
-        <div className="card-three">
-          <figure className="effect">
-            <img className="project-image" src={Loading} alt="Project"></img>
-            <figcaption>
-              <div className="projects-loading">
-                <p className="loading">Project Coming Soon!</p>
+                <a href="https://kidpowerunites-778fd.web.app/">
+                  <p className="loading">Project Coming Soon!</p>
+                  <p className="loading-two">Click for current version</p>
+                </a>
               </div>
             </figcaption>
           </figure>
@@ -132,6 +155,39 @@ const Projects = () => {
             philanthropy through gift giving.
           </p>
         </div>
+        <div className="card">
+          <figure className="effect">
+            <img className="project-image" src={Loading} alt="Project"></img>
+            <figcaption>
+              <div className="projects-loading">
+                <p className="loading-soon">Project Coming Soon!</p>
+              </div>
+            </figcaption>
+          </figure>
+          <p className="project-description">
+            Want to know what it's like to talk to me, myself and I? Join in for
+            this solo chatroom session.
+          </p>
+        </div>
+        {/* </div> */}
+        {/* <button className="arrow-button">
+          <img
+            className="arrow"
+            src={RightArrow}
+            alt="Right Arrow"
+            onClick={handleClick}
+          ></img>
+        </button> */}
+      </div>
+      <div className="arrow-container">
+        <button className="arrow-button-right">
+          <img
+            className="arrow"
+            src={RightArrow}
+            alt="Right Arrow"
+            onClick={handleClick}
+          ></img>
+        </button>
       </div>
     </div>
   );
